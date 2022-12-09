@@ -1,0 +1,30 @@
+<!--snake game-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1 id="Spieltitel">snake</h1>
+        <h2 id="highscore">Highscore: 0</h2>
+        <h3 id="score">Score: 0</h3>
+        <details id="Spielbeschreibung">
+            <summary>Klicke hier für die Spielbeschreibung!</summary>
+            <p>Sammle die roten Punkte ein um länger zu werden und deinen Score um eins zu erhöhen!
+                Wenn du dich selbst berührst oder gegen die Wand fährst ist das Spiel vorbei!
+            </p>
+          </details>
+          <br><br>
+        <audio controls id="Audio3" hidden>
+            <source src="Power.mp3" type="audio/mpeg">
+        </audio> 
+        <div id="Spiel">
+            <script type="text/javascript" src="../js/snake.js"></script>
+            <script>
+                spielfeld();
+                spielstart();
+            </script>
+        </div>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/snake.css">
+    </head>
+    <body>
+    </body>
+</html>

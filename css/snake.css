@@ -1,0 +1,42 @@
+.box{
+    width: 20px;
+    height: 20px;
+    background-color: #DCDCDC;
+    position: absolute;
+    margin: 0 auto;
+    text-align: center;
+}
+#Spiel {
+    width: 27.5%;
+    height: 300px;
+    margin: 0 auto;
+    position: relative;
+}
+body {
+    background-color: lightblue;
+    text-align: center;
+}
+
+h1 {
+    color: black;
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+}
+#highscore {
+    color: black;
+    text-align: center;
+    font-size: 30px;
+}
+
+#score {
+    text-align: right, center;
+    color: black;
+    font-size: 30px;
+}
+#Spielbeschreibung {
+    color: black;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}

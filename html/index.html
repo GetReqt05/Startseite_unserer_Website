@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Startseite der Spielewiese</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+<body>
+<header>
+    <a href="#" class="Logo">MMBJ</a>
+    <u1>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Anmelden</a></li>
+        <li><a href="#">Start</a></li>
+        <li><a href="#">Allgemein</a></li>
+    </u1>
+
+
+</header>
+<section>
+    <h2 id="text">SPIELEWIESE</h2>
+    <a href="#sec" id="knf">Entdecken</a>
+</section>
+<div class="sec" id="sec">
+    <h2>Auf unserer Website findest du die tollsten Spiele
+        <br> Wir haben uns zur Aufgabe gemacht, klassische Spiele als Pixelarts umzusetzen
+        <br> Aber nun
+        <br> VIEL SPAß!</h2>
+    <p><br></p>
+
+    <img id="snake" src="https://www.n-joy.de/multimedia/snake108_v-contentxl.jpg">
+    <!-- Colored raised button -->
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"
+            onclick="window.location.href='../html/snake.html';">
+        Spiel Snake!
+    </button>
+    <br>
+    <br>
+    <br>
+
+    <img id="zwei" src="https://th.bing.com/th/id/R.220140c4a4427dc711b1a7c16f3bf7fa?rik=2Z6LKjwAHxb7jA&riu=http%3a%2f%2fmedia.news.de%2fimages%2fwer-regeln--ziel_855622155_704x396_bd6226999b18168c1675f05beb55be96.jpg%3fimages%2f0f%2ffa%2f96d4b1a624fcd74af105e11d9575.jpg%2cnopic%2fno_pic.jpg%2c704%2c396%2c1%2c1%2c0%2c3%2c812%2c457%2c%2c&ehk=Kcfi2FVeg2k%2betd7Xn%2fohvsFLBheE6vTfI3M7QJI%2bo0%3d&risl=&pid=ImgRaw&r=0">
+    <!-- Colored raised button -->
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"
+            onclick="window.location.href='../html/2048.html';">
+        Spiel 2048!
+    </button>
+    <br>
+    <br>
+    <br>
+
+    <img id="JR" src="https://www.spielesite.com/img/screenshots/5/9415-2.jpg">
+    <!-- Colored raised button -->
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"
+            onclick="window.location.href='../html/JR.html';">
+        Spiel J&R!
+    </button>
+    <br>
+    <br>
+    <br>
+
+    <img id="stacker" src="https://i.ytimg.com/vi/GSp0ZcbBLyM/maxresdefault.jpg">
+    <!-- Colored raised button -->
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"
+            onclick="window.location.href='../html/stacker.html';">
+        Spiel Stacker!
+    </button>
+    <br>
+    <br>
+    <br>
+
+    <img id="PONG" src="https://th.bing.com/th/id/OIP.P7ZCg3Tj7phtcQ7yweS6nQHaGP?pid=ImgDet&rs=1">
+    <!-- Colored raised button -->
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"
+            onclick="window.location.href='../html/PONG.html';">
+        Spiel PONG!
+    </button>
+</div>
+
+<script>
+    let stars = document.getElementById("stars")
+    let moon = document.getElementById("moon")
+    let mountains_behind = document.getElementById("mountains_behind")
+    let text = document.getElementById("text")
+    let knf = document.getElementById("knf")
+    let mountains_front = document.getElementById("mountains_front")
+    let header = document.querySelector('header')
+
+    window.addEventListener('scroll', function(){
+        let value = window.scrollY;
+        stars.style.left = value * 0.25 + 'px';
+        moon.style.top = value * 1.05 + 'px';
+        mountains_behind.style.top = value * 0.5 + 'px';
+        mountains_front.style.top = 0 + 'px';
+        text.style.marginRight = value * 4 + 'px';
+        text.style.marginTop = value * 1.5 + 'px';
+        knf.style.marginTop = value * 1.5 + 'px';
+        header.style.top = value * 0.5 + 'px';
+    })
+
+</script>
+<p>Programmiert von<br>Jakob Maucher<br>Mourice Huke<br>Bennet Steins<br>Maurice Danner</p>
+</body>
+</html>
